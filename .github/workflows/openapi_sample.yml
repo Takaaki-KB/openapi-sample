@@ -1,6 +1,6 @@
 # This workflow will build jar files from this openapi project with Maven
 
-name: OpenAPI build sample
+name: OpenAPI-Build-Sample
 
 on:
   workflow_dispatch:
