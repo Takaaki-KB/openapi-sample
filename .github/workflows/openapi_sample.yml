@@ -33,11 +33,11 @@ jobs:
 #      run: npm install @openapitools/openapi-generator-cli
     - name: generate java client code
       run: npx @openapitools/openapi-generator-cli generate -i sample.yml -g java -o java_api_client
-#    - name: maven build
-#      run: mvn -B package --file pom.xml
-#      working-directory: ./java_api_client
-#    - name: upload war file
-#      uses: actions/upload-artifact@v2
-#      with:
-#        name: mvn results
-#        path: ./java_api_client/target/openapi*.jar
+    - name: maven build
+      run: mvn -B package --file pom.xml
+      working-directory: ./java_api_client
+    - name: upload war file
+      uses: actions/upload-artifact@v2
+      with:
+        name: Jar files upload
+        path: ./java_api_client/target/openapi*.jar
