@@ -31,8 +31,8 @@ jobs:
 #      run: apt install maven -y
 #    - name: set up openapi-generator-cli
 #      run: npm install @openapitools/openapi-generator-cli
-#    - name: generate java client code
-#      run: npx openapi-generator-cli generate -i sample.yml -g java -o java_api_client
+    - name: generate java client code
+      run: npx openapi-generator-cli generate -i sample.yml -g java -o java_api_client
 #    - name: maven build
 #      run: mvn -B package --file pom.xml
 #      working-directory: ./java_api_client
